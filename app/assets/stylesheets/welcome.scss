@@ -1,0 +1,28 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+.butn{
+	border-radius: 3px; 
+	background-color:$color-grey;
+	font-size: 10px;
+}
+.btn-color-1{
+	background-color:$color-green;
+}
+.btn-color-2{
+	background-color: $color-blue;
+}
+.btn-color-3{
+	background-color:$color-yellow;
+}
+.btn-color-4{
+	background-color:$color-orange;
+}
+.btn-color-5{
+	background-color:$color-red;
+}
+.bun{
+	font-size: 14px;
+	border-radius: 3px; 
+}
