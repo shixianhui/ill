@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'child/ccold'
+
   get 'welcome/index'
 
   get 'forecast/index'

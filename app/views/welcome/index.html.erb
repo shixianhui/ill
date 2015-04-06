@@ -11,88 +11,22 @@
 
 <div class="container-fluid">
 	<div class="row feature">
-		
+		<% (1..2) .each do |child_index|%>
 		<div class="col-xs-6">
 			<div class="shadow">
 				<div class="row">
 					<div class="col-xs-6">
-						<%= image_tag "child_cold.png",class:""%>
+						<a href="views/child/ccold.html"><%= image_tag "child_#{child_index}.png",class:""%></a>
 					</div>
 					<div class="col-xs-6">
-						<p style="color:white">儿童感冒气象风险</p>
+						<p style="color:white"><%=@child_name["#{child_index}"]%></p>
 					</div>	
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day" style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn btn-color-1">&nbsp;</div>
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn ">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day" style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn btn-color-1">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/butn.html.erb"%>
 			</div>
 		</div>
-		<div class="col-xs-6">
-			<div class="shadow">
-				<div class="row">
-					<div class="col-xs-6">
-						<%= image_tag "child_asthma.png"%>
-					</div>
-					<div class="col-xs-6">
-						<p style="color:white">儿童哮喘气象风险</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn btn-color-1">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn btn-color-2">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<% end %>
+		
 	</div>
 	<div class="row feature">
 		<div class="col-xs-6">
@@ -105,34 +39,7 @@
 						<p style="color:white">成人感冒气象风险</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-							<div class="btn-set">
-								<div class="col-xs-15 butn btn-color-1">&nbsp;</div>
-								<div class="col-xs-15 butn">&nbsp;</div>
-								<div class="col-xs-15 butn">&nbsp;</div>
-								<div class="col-xs-15 butn">&nbsp;</div>
-								<div class="col-xs-15 butn">&nbsp;</div>	
-							</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn btn-color-2">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/butn.html.erb"%>
 			</div>
 		</div>
 		<div class="col-xs-6">
@@ -145,34 +52,7 @@
 						<p style="color:white">老人感冒气象风险</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn btn-color-3">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn btn-color-2">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/butn.html.erb"%>
 			</div>
 		</div>
 	</div>
@@ -187,34 +67,7 @@
 						<p style="color:white">慢性阻塞性肺病气象风险</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn ">&nbsp;</div>
-							<div class="col-xs-15 butn btn-color-2">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="btn-set">
-							<div class="col-xs-15 butn btn-color-1">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>
-							<div class="col-xs-15 butn">&nbsp;</div>	
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/butn.html.erb"%>
 			</div>
 		</div>
 		<div class="col-xs-6">
@@ -236,12 +89,12 @@
 		<div class="col-xs-1"></div>
 		<div class="col-xs-11">
 			<div class="butn-set text-center">
-		<div class="col-xs-15 bun "style="background-color:green;color:white" >低</div>
-		<div class="col-xs-15 bun" style="background-color:#00a0e9;color:white" >轻微</div>
-		<div class="col-xs-15 bun" style="background-color:yellow;color:white" >中等</div>
-		<div class="col-xs-15 bun" style="background-color:orange;color:white" >较高</div>
-		<div class="col-xs-15 bun" style="background-color:red;color:white" >高</div>	
-	</div>
+				<div class="col-xs-15 bun "style="background-color:green;color:white" >低</div>
+				<div class="col-xs-15 bun" style="background-color:#00a0e9;color:white" >轻微</div>
+				<div class="col-xs-15 bun" style="background-color:yellow;color:white" >中等</div>
+				<div class="col-xs-15 bun" style="background-color:orange;color:white" >较高</div>
+				<div class="col-xs-15 bun" style="background-color:red;color:white" >高</div>	
+			</div>
 		</div>
 	</div>
 </div>

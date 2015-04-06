@@ -11,87 +11,21 @@
 
 <div class="container-fluid">
 	<div class="row feature">
-		
+		<% (1..2) .each do |child_index|%>
 		<div class="col-xs-6">
 			<div class="shadow">
 				<div class="row">
 					<div class="col-xs-6">
-						<%= image_tag "child_cold.png",class:""%>
+						<%= image_tag "child_#{child_index}.png",class:""%>
 					</div>
 					<div class="col-xs-6">
-						<p style="color:white">儿童感冒气象风险</p>
+						<p style="color:white"><%=@child_name["#{child_index}"]%></p>
 					</div>	
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day" style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled btn-info" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>	
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day" style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled btn-info" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>	
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/btn.html.erb"%>
 			</div>
 		</div>
-		<div class="col-xs-6">
-			<div class="shadow">
-				<div class="row">
-					<div class="col-xs-6">
-						<%= image_tag "child_asthma.png"%>
-					</div>
-					<div class="col-xs-6">
-						<p style="color:white">儿童哮喘气象风险</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-default btn-sm disabled btn-success" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-default btn-sm disabled btn-success" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<% end %>
 	</div>
 	<div class="row feature">
 		<div class="col-xs-6">
@@ -104,34 +38,7 @@
 						<p style="color:white">成人感冒气象风险</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled btn-info" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-default btn-sm disabled btn-success" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>	
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/btn.html.erb"%>
 			</div>
 		</div>
 		<div class="col-xs-6">
@@ -144,34 +51,7 @@
 						<p style="color:white">老人感冒气象风险</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but" >
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled btn-primary" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but" >
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled btn-warning" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/btn.html.erb"%>
 			</div>
 		</div>
 	</div>
@@ -186,34 +66,7 @@
 						<p style="color:white">慢性阻塞性肺病气象风险</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style="color:white;">今</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>	
-							<a role="button" class="btn btn-default btn-sm disabled btn-info" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2">
-						<div class="day"  style=" color:white;">明</div>
-					</div>
-					<div class="col-xs-10">
-						<div class="but">
-							<a role="button" class="btn btn-success btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>
-							<a role="button" class="btn btn-default btn-sm disabled" ></a>	
-						</div>
-					</div>
-				</div>
+				<%=render partial:"share/btn.html.erb"%>
 			</div>
 		</div>
 		<div class="col-xs-6">

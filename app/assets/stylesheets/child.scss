@@ -1,0 +1,51 @@
+// Place all the styles related to the child controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+.cc img{
+	width: 100%;
+	padding-left: 10px;
+	padding-bottom: 7px;
+}
+p{
+	font-size: 16px;
+	padding-top: 10px;
+}
+.cbun{
+	font-size: 12px;
+	border-radius: 3px;
+
+}
+hr.divider{
+	margin: 5px ;
+	border-color: rgba(140, 149, 177, 0.2);
+}
+.ctoday{
+	padding: 0px 5px;
+
+}
+.cday{
+	font-size: 16px;
+	
+	padding:0 5px;
+}
+.cbtn-set{
+	padding-top: 5px;
+}
+.cbutn{
+	border-radius: 3px; 
+	background-color:$color-grey;
+	font-size: 9px;
+}
+.content-1{
+	font-size: 16px;
+	margin: 5px;
+} 
+.content-2{
+	margin: 5px;
+}
+.cshadow{
+	background: rgba(0,0,0,0.15);
+	padding: 10px 0 50px;
+	margin-bottom: 10px;
+}
