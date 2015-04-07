@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'child/ccold'
+  get 'child/ccold' 
 
   get 'welcome/index'
 

@@ -5,7 +5,7 @@
 .butn{
 	border-radius: 3px; 
 	background-color:$color-grey;
-	font-size: 10px;
+	font-size: 9px;
 }
 .btn-color-1{
 	background-color:$color-green;
@@ -23,6 +23,14 @@
 	background-color:$color-red;
 }
 .bun{
-	font-size: 14px;
+	font-size: 13px;
 	border-radius: 3px; 
+}
+span{
+	color: $color-white;
+	font-size: 8px;
+	padding-top: 10px;
+}
+.no-padding{
+	padding: 0px !important;
 }

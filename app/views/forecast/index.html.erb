@@ -16,7 +16,7 @@
 			<div class="shadow">
 				<div class="row">
 					<div class="col-xs-6">
-						<%= image_tag "child_#{child_index}.png",class:""%>
+					<%= link_to (image_tag "child_#{child_index}.png"), child_ccold_path %>	
 					</div>
 					<div class="col-xs-6">
 						<p style="color:white"><%=@child_name["#{child_index}"]%></p>
